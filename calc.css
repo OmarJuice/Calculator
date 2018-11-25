@@ -1,0 +1,59 @@
+
+body, html{
+    height: 100%;
+    background-color: orange;
+}
+
+
+
+#calcBody{
+    position: fixed;
+
+}
+.box{
+    background-color: black;
+    width: 25%;
+    height: auto;
+    position: fixed;
+    /* position: absolute;
+    top: auto;
+    bottom: auto; */
+}
+.column.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.orbitron{
+    font-family: 'Orbitron', sans-serif;
+}
+.columns, .column{
+    margin: 0;
+}
+.button{
+    width: 98%;
+    /* margin: 0; */
+    height: 98%;
+    border: 1px solid black;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+#calcHead{
+    height: auto;
+}
+#calcInside{
+    height: 375px;
+}
+@media only screen and (max-width: 1000px){
+    .box{
+        width: 40%;
+    }
+    
+}
+@media only screen and (max-width: 768px){
+    .box{
+        width: 85%;
+        height: auto;
+    }
+}

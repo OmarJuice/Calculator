@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="calc.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="debug.css"> -->
+</head>
+<body class="level is-mobile is-tablet">
+    
+    <div class="level-item has-text-centered columns is-vcentered is-centered  is-mobile is-tablet">
+        <div id="calcColumn"class="column is-one-third is-two-thirds-tablet is-four-fifths-mobile has-text-centered flex">
+            <div id="calcBody" class="box">
+                <div id="calcHead" class="columns is-gapless is-multiline is-mobile is-tablet">
+                    <div class="column is-full">
+                        <h4 class="subtitle is-6 orbitron has-text-warning is-pulled-right" id="Full">0</h4>
+                    </div>
+                    <div class="column is-full" id="value"><h3 id="val" class="title is-4 orbitron has-text-primary is-pulled-right"><span id="Sign"></span><span id="Expression">0</span></h3></div>
+                </div>
+                <div id="calcInside" class="columns is-gapless is-multiline is-mobile is-tablet">
+                    <div class="column is-one-quarter"><button id="AC" class="button orbitron is-danger">AC</button></div>
+                    <div class="column is-one-quarter"><button id="CE" class="button orbitron is-danger">CE</button></div>
+                    <div class="column is-one-quarter"><button id="sign" class="button orbitron is-info">±</button></div>
+                    <div class="column is-one-quarter"><button id="c/" class="button orbitron operator is-info">/</button></div>
+                    <div class="column is-one-quarter"><button id="c7" class="button orbitron num is-dark">7</button></div>
+                    <div class="column is-one-quarter"><button id="c8" class="button orbitron num is-dark">8</button></div>
+                    <div class="column is-one-quarter"><button id="c9" class="button orbitron num is-dark">9</button></div>
+                    <div class="column is-one-quarter"><button id="c*" class="button orbitron operator is-info">X</button></div>
+                    <div class="column is-one-quarter"><button id="c4" class="button orbitron num is-dark">4</button></div>
+                    <div class="column is-one-quarter"><button id="c5" class="button orbitron num is-dark">5</button></div>
+                    <div class="column is-one-quarter"><button id="c6" class="button orbitron num is-dark">6</button></div>
+                    <div class="column is-one-quarter"><button id="c-" class="button orbitron operator is-info">-</button></div>
+                    <div class="column is-one-quarter"><button id="c1" class="button orbitron num is-dark">1</button></div>
+                    <div class="column is-one-quarter"><button id="c2" class="button orbitron num is-dark">2</button></div>
+                    <div class="column is-one-quarter"><button id="c3" class="button orbitron num is-dark">3</button></div>
+                    <div class="column is-one-quarter"><button id="c+" class="button orbitron operator is-info">+</button></div>
+                    <div class="column is-half"><button id="c0" class="button orbitron num is-dark">0</button></div>
+                    <div class="column is-one-quarter"><button id="decimal" class="button orbitron is-dark">.</button></div>
+                    <div class="column is-one-quarter"><button id="Equals" class="button orbitron is-success">=</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="calc.js"></script>
+</body>
+</html>
